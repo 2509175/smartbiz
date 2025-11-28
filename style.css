@@ -1,0 +1,54 @@
+/* Basic reset */
+* { box-sizing: border-box; margin:0; padding:0; }
+html,body { height:100%; font-family: "Segoe UI", Roboto, Arial, sans-serif; color:#222; background:#f4f7fb; }
+
+/* Container */
+.container { width:90%; max-width:1100px; margin:0 auto; }
+
+/* Header */
+.site-header { background:#fff; border-bottom:1px solid #eef2f7; }
+.header-inner { display:flex; align-items:center; justify-content:space-between; padding:18px 0; }
+.brand { font-weight:700; font-size:20px; color:#0b2340; }
+.main-nav a { margin-left:18px; text-decoration:none; color:#234; }
+.main-nav a.active { font-weight:600; color:#0b4fc9; }
+.main-nav .cta { background:#1e65d9; color:#fff; padding:8px 14px; border-radius:6px; text-decoration:none; }
+
+/* Hero */
+.hero { display:flex; gap:30px; align-items:center; padding:40px 0; background:#fff; margin-top:18px; border-radius:8px; box-shadow:0 6px 18px rgba(11,35,64,0.03); }
+.hero-left { flex:1; }
+.hero-left h1 { font-size:36px; line-height:1.05; margin-bottom:12px; color:#0b2340; }
+.hero-left p { color:#47626f; margin-bottom:18px; max-width:520px; }
+.hero-right { flex:1; display:flex; justify-content:center; }
+.hero-right img { width:100%; max-width:520px; border-radius:8px; }
+
+/* Button */
+.button { display:inline-block; background:#1e65d9; color:#fff; padding:10px 18px; border-radius:8px; text-decoration:none; }
+
+/* Features */
+.features { margin:30px 0; padding:26px; background:#fff; border-radius:8px; box-shadow:0 6px 18px rgba(11,35,64,0.03); }
+.feature-grid { display:flex; gap:18px; margin-top:18px; }
+.feature-card { flex:1; background:#f7fbff; padding:18px; border-radius:6px; text-align:center; }
+
+/* Page section */
+.page { margin:24px 0; padding:24px; background:#fff; border-radius:8px; box-shadow:0 6px 18px rgba(11,35,64,0.03); }
+.full-img { width:100%; display:block; border-radius:8px; }
+
+/* Contact layout */
+.contact-layout { display:flex; gap:30px; align-items:flex-start; }
+.contact-left { flex:1; }
+.contact-right { flex:1; }
+.contact-form label { display:block; margin-top:12px; color:#2e4a57; font-size:14px; }
+.contact-form input, .contact-form textarea { width:100%; padding:10px; border:1px solid #e3eef6; border-radius:6px; margin-top:6px; background:#fbfdff; }
+.contact-form textarea { resize:vertical; }
+.contact-form .button { margin-top:14px; }
+
+/* Footer */
+.site-footer { margin-top:30px; padding:20px 0; text-align:center; color:#6b7b86; }
+
+/* Responsive */
+@media (max-width:900px) {
+  .hero { flex-direction:column; }
+  .feature-grid { flex-direction:column; }
+  .contact-layout { flex-direction:column; }
+  .main-nav { display:flex; gap:8px; flex-wrap:wrap; }
+}
